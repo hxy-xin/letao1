@@ -1,6 +1,18 @@
 .body_bgc{
   background-color: green;
 }
+a,
+a:link,
+a:visited,
+a:hover,
+a:active{
+  text-decoration: none;
+}
+ul{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
 
 .panel .panel-title{
   line-height: 40px;
@@ -9,6 +21,117 @@
   font-size: 20px;
 }
 
+.red{
+  color: #a94442;
+}
 .mt_150{
   margin-top: 150px;
 }
+.mt_20{
+  margin-top: 20px;
+}
+
+/* 侧边栏 */
+.lt-aside{
+  width: 180px;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #222D32;
+  z-index: 999;
+  transition: all 1s;
+}
+
+.lt-aside.hideMenu{
+  left: -180px;
+
+}
+
+.lt-aside .brand{
+  width: 180px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  font-size: 25px;
+  background-color: #367FA9;
+}
+.lt-aside .brand a{
+
+  color:#fff;
+}
+
+.lt-aside .user{
+  padding-top: 30px;
+}
+.lt-aside .user img{
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  display: block;
+  margin:0 auto;
+}
+.lt-aside .user p{
+  height: 40px;
+  line-height: 40px;
+  font-size: 18px;
+  color: #fff;
+  text-align: center;
+}
+.lt-aside .nav a{
+  display: block;
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  padding-left: 40px;
+  color: #fff;
+  border-left: 3px solid transparent;
+}
+
+.lt-aside .nav .child a {
+  padding-left: 60px;
+}
+
+.lt-aside .nav a.current {
+  background-color: #1D1F21;
+  border-left: 3px solid #006699;
+}
+
+/* 右侧主体部分 */
+.lt_main{
+  padding-left: 180px;
+  height: 50px;
+  padding-top: 50px;
+ transition: all 1s;
+}
+.lt_main.hideMenu{
+  padding-left: 0;
+}
+.lt_topbar{
+  height: 50px;
+  width: 100%;
+  line-height: 50px;
+  background-color: #3C8DBC;
+  position: fixed;
+  top: 0;
+  right: 0;
+  padding-left: 180px;
+  transition: all 1s;
+  z-index: 666;
+  transition: all 1s;
+}
+.lt_topbar.hideMenu{
+  padding: 0;
+
+}
+
+
+.lt_topbar a {
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  color:#fff;
+  font-size: 22px;
+}
+
