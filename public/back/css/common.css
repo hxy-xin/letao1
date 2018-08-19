@@ -134,4 +134,8 @@ ul{
   color:#fff;
   font-size: 22px;
 }
-
+/* 指定echarts容器的宽高 */
+.echars_1, .echars_2{
+  width: 48%;
+  height: 400px;
+}

@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="./css/common.css">
   <link rel="stylesheet" href="./lib/bootstrap-validator/css/bootstrapValidator.css">
   <link rel="stylesheet" href="./lib/nprogress/nprogress.css">
-
+  
 </head>
 <body class="bgody_bg">
  
@@ -47,10 +47,15 @@
     <div class="container-fluid">
       <!-- 路径导航 -->
       <ol class="breadcrumb">
-          <li><a href="#">管理系统</a></li>
-          <li><a href="#">分类管理</a></li>
-          <li class="active">一级分类</li>
-        </ol>
+        <li><a href="#">管理系统</a></li>
+        <li><a href="#">分类管理</a></li>
+        <li class="active">一级分类</li>
+      </ol>
+      <!-- echars图表 -->
+      <div class="lt_content">
+        <div class="echars_1 pull-left" id="echarts_1"></div>
+        <div class="echars_2 pull-right" id="echarts_2"></div>
+      </div>
     </div>
   </div>
 
@@ -79,5 +84,6 @@
   <script src="./lib/nprogress/nprogress.js"></script>
   <script src="./js/common.js"></script>
   <script src="./js/index.js"></script>
+  <script src="./lib/echarts/echarts.min.js"></script>
 </body>
 </html>
